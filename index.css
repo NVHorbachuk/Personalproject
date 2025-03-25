@@ -1,151 +1,230 @@
-li{
-    list-style-type:none;
-    float:left;
-    margin-right:70px;
-    }
-    
-    .clear{clear:both;}
-    
-    a{
-    text-decoration:none;
-    color:white;
-    font-family: 'Quicksand'}
-    
-    a:hover{color:black}
-    
-    h1{
-    text-decoration:none ;
-    color:white;
-    font-size:60px;
-    font-family: 'Quicksand', 
-    sans-serif;
-    text-align:center; 
-    }
-    
-    h2{
-    text-decoration:none ;
-    color:white;
-    font-family: 'Quicksand', 
-    sans-serif;
-    text-align:center 
-    }
-    
-    .item{height:400px;}
-    
-    #Bloc_1{
-    width:70%;
-    height:auto;
-    background-color:white;
-    margin:50px auto 50px;
-    padding:0 15px;
-    text-align:center;
-    color:black;
-    font-family: 'Quicksand';}
-    #cadre{margin-bottom:50px;}
-    
-    #NOM,
-    #RECHERCHE{font-family: 'Quicksand';color:black;margin-top:40px;}
-    
-    #Bloc_2{
-    background-size:100%;
-    background-repeat:no-repeat;
-    height:200px;background-image:url(https://blog.ingleinternational.com/wp-content/uploads/2016/06/Ingle-International-Travel-Insurance-nav075-491375747.jpg);
-    text-align:center;
-    padding:90px 10px 10px 10px;
-    }
-    
-    #eu{color:white;font-family: 'Quicksand'; font-weight:bold;font-size:30px;border:double;}
-    
-    #Bloc_3{
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-image:url(http://idata.over-blog.com/3/98/99/82/photos/photos-9127.jpg);
-    padding:90px 10px 10px 10px;
-    text-align:center;
-    color:white;
-    font-family: 'Quicksand';
-    height:200px;
-    }
-    
-    #Bloc_4{
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-image:url(http://lauraaustin.imgix.net/7869_holidayroadtrip_lauraaustin_332.jpg?h=1000&ixjsv=1.1.2);
-    font-weight:bold;
-    padding:90px 10px 10px 10px;
-    text-align:center;
-    color:white;
-    font-family: 'Quicksand';
-    height:200px;
-    margin:0 auto 50px;
-    }
-    
-    #Bloc_5{
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-image:url(http://www.anjakukofka.com/wp-content/uploads/2015/11/mysayang-36.jpg);
-    padding:90px 10px 10px 10px;
-    text-align:center;
-    color:white;
-    font-family: 'Quicksand';
-    height:200px;
-    margin:0 auto 50px;
-    }
-    
-    #Bloc_6{
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-image:url(http://barefootsurftravel.com/wp-content/uploads/2018/02/Cliff-Jump-Bali-Lembongan.jpg);
-    padding:90px 10px 10px 10px;
-    text-align:center;
-    color:white;
-    font-family: 'Quicksand';
-    height:200px;
-    margin:0 auto 50px;
-    }
-    
-    #Bloc_7{
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-image:url(http://dreamseasurfcamp.com/wp-content/uploads/2015/02/surf-camp-france-cover-e1425894244238.jpg);
-    padding:90px 10px 10px 10px;
-    text-align:center;
-    color:white;
-    font-family: 'Quicksand';
-    height:200px;
-    margin:0 auto 50px;
-    }
-    
-    #Bloc_8{
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-image:url(https://www.blackandwood.fr/wp-content/uploads/2016/08/Conseil-roadtrip-canada-usa-BW-2.jpg);
-    padding:90px 10px 10px 10px;
-    text-align:center;
-    color:white;
-    font-family: 'Quicksand';
-    height:800px;
-    }
-    
-    .btn-white{
-    color:#FFFFFF;
-    }
-    
-    #basdepage{
-    width:100%;
-    height:100px;
-    background-color:black; 
-    margin-top:20px; 
-    text-align:center; 
-    padding:35px;
-    } 
-    
-    a#insta:hover{color:#FBE4AD}
-    
-    a#facebook:hover{color:#FBE4AD}
-    
-    a#yt:hover{color:#FBE4AD}
-    
-    a#pinterest:hover{color:#FBE4AD}
-    
-    #basdepage a{margin: 0 20px;}
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.1;
+    background-color: #EE82EE;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background-color: #EE82EE;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 150px;
+   display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+nav ul 
+{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: purple;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: src= url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #8A2BE2;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #666;
+  
+}
+
+.about-images img {
+    width: 48%;
+    margin: 10px 1%;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.portfolio-gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 12px 30px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #ff4500;
+}
+
+/* Footer Section */
+footer {
+    background-color: #EE82EE;
+    color: white;
+    text-align: justify;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
