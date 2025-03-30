@@ -13,8 +13,6 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
-    
     
 }
 
@@ -26,7 +24,7 @@ body {
 
 /* Header Section */
 header {
-    background-color: #6d635d30;
+    background-color: #1c2965e4;
     color: white;
     padding: 1px 0;
     text-align: right;
@@ -44,8 +42,8 @@ nav ul
 {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 10px;
     margin-top: 20px;
 }
 
@@ -54,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: purple;
+    color: rgb(160, 186, 198);
     text-decoration: none;
     font-size: 19px;
 }
@@ -88,7 +86,7 @@ nav ul li a:hover {
 }
 
 .cta-button {
-    background-color: #8A2BE2;
+    background-color: #2b93e2;
     color: white;
     padding: 12px 30px;
     text-decoration: none;
@@ -104,35 +102,39 @@ nav ul li a:hover {
 .about {
     padding: 180px 0;
     text-align: center;
-    background-color: rgb(176, 158, 196);
+    background-color: rgba(52, 102, 178, 0.295);
 }
 
 .about h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #092c41;
 }
 
 .about p {
     font-size: 2rem;
-    color: #666;
+    color: #dcf1f5;
+    text-align: justify;
   
 }
 
 .about-images img {
-    width: 35%;
+    display: center;
+    width: 50%;
     margin: 10px 1%;
 }
 
 /* Services Section */
 .services {
-    padding: 60px 0;
-    background-color: #262126;
+    padding: 180px 0;
+    background-color: #2e53947c;
     text-align: center;
 }
 
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
+    color: #b3cad8;
 }
 
 .service-list {
@@ -142,27 +144,28 @@ nav ul li a:hover {
 }
 
 .service-item {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 30%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(173, 212, 238, 0.433);
+    padding: 80px;
+    border-radius: 50px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(131, 42, 42, 0.1);
 }
 
 .service-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 3rem;
+    margin-bottom: 35px;
+    color: #cad5e3;
 }
 
 .service-item p {
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 3rem;
+    color: #660a0af0;
 }
 
 /* Portfolio Section */
 .portfolio {
     padding: 60px 0;
-    background-color: white;
+    background-color: rgba(140, 191, 230, 0.562);
     text-align: center;
 }
 
@@ -185,7 +188,7 @@ nav ul li a:hover {
 /* Team Section */
 .team {
     padding: 60px 0;
-    background-color: #ffffff;
+    background-color: #3277a877;
     text-align: center;
 }
 
@@ -201,7 +204,7 @@ nav ul li a:hover {
 }
 
 .member {
-    background: #f0f0f0;
+    background: #5191a1ba;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
@@ -210,7 +213,7 @@ nav ul li a:hover {
 
 .member img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .member h3 {
@@ -219,16 +222,16 @@ nav ul li a:hover {
 }
 
 .member p {
-    font-size: 1rem;
-    color: #666;
+    font-size: 1.5rem;
+    color: #834343;
 }
 .listen-section {
-    background-image: url('background-image.jpg'); /* Додай правильний фон */
+    background-image: url('background-image.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 100px 20px;
-    color: white;
+    color: rgb(107, 158, 201);
 }
 
 .listen-section h2 {
@@ -239,17 +242,36 @@ nav ul li a:hover {
 
 .listen-section p {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    display: center;
+}
+.video {
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    .video-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .video {
+        max-width: 560px;
+    }
+    
 }
 
+
 .cta-button {
-    background-color: #8A2BE2;
-    color: white;
+    background-color: #ddd9e0;
+    color: rgb(100, 113, 144);
     padding: 12px 30px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
 }
+
 
 .cta-button:hover {
     background-color: #ff4500;
@@ -257,7 +279,7 @@ nav ul li a:hover {
 
 /* Contact Section */
 .contacts {
-    background-color: #111; /* Темний фон */
+    background-color: #7fa6c882;
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -274,7 +296,7 @@ nav ul li a:hover {
 }
 
 .contact-info a {
-    color: #ff6347;
+    color: #304da4;
     text-decoration: none;
 }
 
@@ -318,7 +340,7 @@ nav ul li a:hover {
 
 .contact-form button {
     padding: 12px 30px;
-    background-color: #ff6347;
+    background-color: #142436;
     color: white;
     border: none;
     border-radius: 5px;
@@ -330,14 +352,24 @@ nav ul li a:hover {
     background-color: #ff4500;
 }
 
-
-
 /* Footer Section */
 footer {
-    background-color: #ef72ef;
-    color: rgb(215, 109, 194);
+    background-color: #499bce9a;
+    color: rgb(96, 52, 87);
     text-align: justify;
     padding: 20px 0;
+    .footer-text {
+        display: flex; 
+        justify-content: space-between; 
+        gap: 20px; /
+    
+    }
+    
+    .footer-text p {
+        margin: 0;
+        white-space: nowrap;
+    }
+    
 }
 
 footer p {
