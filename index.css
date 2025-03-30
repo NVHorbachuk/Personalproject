@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.1;
-    background-color: #EE82EE;
+    background-color: #433c43;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 
 /* Header Section */
 header {
-    background-color: #EE82EE;
+    background-color: #d988d9;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -111,14 +111,14 @@ nav ul li a:hover {
 }
 
 .about-images img {
-    width: 48%;
+    width: 35%;
     margin: 10px 1%;
 }
 
 /* Services Section */
 .services {
     padding: 60px 0;
-    background-color: #f0f0f0;
+    background-color: #262126;
     text-align: center;
 }
 
@@ -174,6 +174,46 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+/* Team Section */
+.team {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.member h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.member p {
+    font-size: 1rem;
+    color: #666;
+}
 
 /* Contact Section */
 .contact {
@@ -217,8 +257,8 @@ nav ul li a:hover {
 
 /* Footer Section */
 footer {
-    background-color: #EE82EE;
-    color: white;
+    background-color: #ef72ef;
+    color: rgb(215, 109, 194);
     text-align: justify;
     padding: 20px 0;
 }
