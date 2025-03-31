@@ -9,7 +9,8 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.1;
     background-color: #8A2BE2;
-        background-image: url('https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        /* background-image: url('https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
+        background-image: url("./img/pexels-lichtblick800-31340391.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -36,6 +37,7 @@ header .logo img {
    display: flex;
     justify-content: flex-start;
     padding: 10px;
+    
 }
 
 nav ul 
