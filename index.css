@@ -24,21 +24,24 @@ body {
 }
 
 /* Header Section */
-header {
-    background-color: #1c2965e4;
-    color: white;
-    padding: 1px 0;
-    text-align: right;
-    
+header .container {
+    background-color: #333; /* Колір фону хедера */
+    padding: 30px 0;
+    display: flex; 
+    justify-content: space-between; /* Логотип зліва, меню справа */
+    align-items: center; /* Вирівнює елементи по вертикалі */
+    padding: 1px 1px;
 }
+nav {
+    flex-grow: 1; }
+    
 
 header .logo img {
-    width: 150px;
-   display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-    
+    width: 150px; /* Зменшена ширина логотипу */
+    height: auto; /* Автоматична висота для збереження пропорцій */
+    display: block;
 }
+    
 
 nav ul 
 {
@@ -54,7 +57,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(160, 186, 198);
+    color: rgb(143, 229, 235);
     text-decoration: none;
     font-size: 19px;
 }
@@ -120,11 +123,16 @@ nav ul li a:hover {
   
 }
 
-.about-images img {
-    display: center;
-    width: 50%;
-    margin: 10px 1%;
+.about-images {
+    display: flex; /* Робить контейнер гнучким */
+    justify-content: center; /* Центрує зображення по горизонталі */
+    gap: 20px; /* Відстань між зображеннями */
 }
+
+.about-images img {
+    width: 45%; /* Розмір кожного зображення */
+}
+
 
 /* Services Section */
 .services {
