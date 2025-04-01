@@ -10,7 +10,7 @@ body {
     line-height: 1.1;
     background-color: #8A2BE2;
         /* background-image: url('https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
-        background-image: url("./img/pexels-lichtblick800-31340391.jpg");
+    
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -18,15 +18,19 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%; /* Робить блок на всю ширину */
+    max-width: none; /* Забирає максимальне обмеження */
+    margin: 0; /* Видаляє автоматичні відступи */
+    padding: 0 20px; /* Додає внутрішні відступи, щоб контент не прилипав до країв */
 }
 
 /* Header Section */
 header .container {
-    background-color: #333; /* Колір фону хедера */
-    padding: 30px 0;
+    width: 100%;
+    background-image: url("./img/pexels-dmitry-demidov-515774-3784424.jpg");
+    background-color: #aad0e11a; /* Колір фону хедера */
+    background-size: cover;
+    padding: 5px 0;
     display: flex; 
     justify-content: space-between; /* Логотип зліва, меню справа */
     align-items: center; /* Вирівнює елементи по вертикалі */
@@ -37,7 +41,7 @@ nav {
     
 
 header .logo img {
-    width: 150px; /* Зменшена ширина логотипу */
+    width: 80px; /* Зменшена ширина логотипу */
     height: auto; /* Автоматична висота для збереження пропорцій */
     display: block;
 }
@@ -57,7 +61,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(143, 229, 235);
+    color: rgb(199, 229, 231);
     text-decoration: none;
     font-size: 19px;
 }
@@ -68,11 +72,11 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: src= url('hero-image.jpg');
+    background-image: url("./img/pexels-rpnickson-2647990.jpg");
     background-size: cover;
     background-position: center;
-    height: 80vh;
-    color: white;
+    height: 100vh;
+    color: rgb(224, 237, 239);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -105,7 +109,9 @@ nav ul li a:hover {
 
 /* About Section */
 .about {
-    padding: 180px 0;
+    background-image: url("./img/pexels-eberhardgross-3389532.jpg");
+    background-size: cover;
+    padding: 60px 0;
     text-align: center;
     background-color: rgba(52, 102, 178, 0.295);
 }
@@ -118,7 +124,7 @@ nav ul li a:hover {
 
 .about p {
     font-size: 2rem;
-    color: #dcf1f5;
+    color: #06333d;
     text-align: justify;
   
 }
@@ -130,13 +136,15 @@ nav ul li a:hover {
 }
 
 .about-images img {
-    width: 45%; /* Розмір кожного зображення */
+    width: 35%; /* Розмір кожного зображення */
 }
 
 
 /* Services Section */
 .services {
-    padding: 180px 0;
+    background-image: url("./img/pexels-sanaan-3075993.jpg");
+    background-size: cover;
+    padding: 130px 0;
     background-color: #2e53947c;
     text-align: center;
 }
@@ -144,37 +152,53 @@ nav ul li a:hover {
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #b3cad8;
+    color: #d4dce1;
 }
 
 .service-list {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    align-items: stretch; /* Всі елементи рівні по висоті */
 }
 
 .service-item {
-    background-color: rgba(173, 212, 238, 0.433);
-    padding: 80px;
-    border-radius: 50px;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(131, 42, 42, 0.1);
+    background-color: rgba(223, 226, 229, 0.433);
+    padding: 50px; /* Менше відступів, щоб текст рівномірно розподілявся */
+    border-radius: 20px; /* Менше округлення */
+    width: 30%; /* Фіксована ширина */
+    box-shadow: 0 4px 10px rgba(208, 204, 204, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Рівномірний розподіл тексту */
+    align-items: center; /* Центрування тексту */
+    text-align: center;
+    min-height: 350px; /* Однакова висота */
 }
 
 .service-item h3 {
-    font-size: 3rem;
-    margin-bottom: 35px;
-    color: #cad5e3;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #dcdfe4;
 }
 
-.service-item p {
-    font-size: 3rem;
-    color: #660a0af0;
+.service-item ul {
+    list-style: none; /* Прибрати стандартні маркери */
+    padding: 0;
+    text-align: center;
+}
+
+.service-item li {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 /* Portfolio Section */
 .portfolio {
-    padding: 60px 0;
+    background-image: url("./img/pexels-evgeny-tchebotarev-1058775-4101555.jpg");
+    background-size: cover;
+    padding: 50px 0;
     background-color: rgba(140, 191, 230, 0.562);
     text-align: center;
 }
@@ -191,20 +215,25 @@ nav ul li a:hover {
 }
 
 .portfolio-gallery img {
-    width: 30%;
+    width: 20%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 /* Team Section */
 .team {
+    background-image: url("./img/pexels-lukas-rodriguez-1845331-3618162.jpg");
+    background-size: cover;
     padding: 60px 0;
-    background-color: #3277a877;
+    background-color: #b4c6d377;
     text-align: center;
 }
 
 .team h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #bcc945; /* Замість цього кольору використовуйте бажаний */
+        font-size: 2.5rem;
+        margin-bottom: 20px;
 }
 
 .team-members {
@@ -214,7 +243,7 @@ nav ul li a:hover {
 }
 
 .member {
-    background: #5191a1ba;
+    background: #d3b996ba;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
@@ -233,10 +262,11 @@ nav ul li a:hover {
 
 .member p {
     font-size: 1.5rem;
-    color: #834343;
+    color: #bee0e2;
 }
+
 .listen-section {
-    background-image: url('background-image.jpg');
+    background-image: url(img/pexels-eberhardgross-2310713.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -245,7 +275,7 @@ nav ul li a:hover {
 }
 
 .listen-section h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -253,25 +283,31 @@ nav ul li a:hover {
 .listen-section p {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    display: center;
-}
-.video {
-    justify-content: center;
-    gap: 10px;
-    display: flex;
-    .video-wrapper {
-        display: flex;
-        justify-content: flex-start;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-    
-    .video {
-        max-width: 560px;
-    }
-    
 }
 
+
+    .video {
+        justify-content: center;
+        gap: 10px;
+        display: flex;
+        .video-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .video {
+            max-width: 560px;
+        }
+}
+
+
+
+
+
+
+    
 
 .cta-button {
     background-color: #ddd9e0;
@@ -289,6 +325,7 @@ nav ul li a:hover {
 
 /* Contact Section */
 .contacts {
+    
     background-color: #7fa6c882;
     color: white;
     padding: 60px 0;
@@ -361,6 +398,22 @@ nav ul li a:hover {
 .contact-form button:hover {
     background-color: #ff4500;
 }
+/* Map section */
+
+map-section 
+.map-section {
+    text-align: center; /* Вирівнює весь текст по центру */
+    padding: 50px 0;
+    background-color: #f4f4f4; /* Колір фону */
+}
+    .map-section h2 {
+        text-align: center; 
+        color: #3e9bbb92; /* Колір тексту (можна змінити) */
+        font-size: 2.5rem; /* Розмір шрифту */
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
 
 /* Footer Section */
 footer {
