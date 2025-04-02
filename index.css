@@ -8,9 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.1;
-    background-color: #8A2BE2;
-        /* background-image: url('https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
-    
+    background-color: #b37e3f;    
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -18,22 +16,22 @@ body {
 }
 
 .container {
-    width: 100%; /* Робить блок на всю ширину */
-    max-width: none; /* Забирає максимальне обмеження */
-    margin: 0; /* Видаляє автоматичні відступи */
-    padding: 0 20px; /* Додає внутрішні відступи, щоб контент не прилипав до країв */
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 20px;
 }
 
 /* Header Section */
 header .container {
     width: 100%;
     background-image: url("./img/pexels-dmitry-demidov-515774-3784424.jpg");
-    background-color: #aad0e11a; /* Колір фону хедера */
+    background-color: #aad0e11a;
     background-size: cover;
     padding: 5px 0;
     display: flex; 
-    justify-content: space-between; /* Логотип зліва, меню справа */
-    align-items: center; /* Вирівнює елементи по вертикалі */
+    justify-content: space-between;
+    align-items: center;
     padding: 1px 1px;
 }
 nav {
@@ -41,8 +39,8 @@ nav {
     
 
 header .logo img {
-    width: 80px; /* Зменшена ширина логотипу */
-    height: auto; /* Автоматична висота для збереження пропорцій */
+    width: 80px;
+    height: auto; 
     display: block;
 }
     
@@ -111,9 +109,11 @@ nav ul li a:hover {
 .about {
     background-image: url("./img/pexels-eberhardgross-3389532.jpg");
     background-size: cover;
-    padding: 60px 0;
+    padding: 20px 0;
     text-align: center;
     background-color: rgba(52, 102, 178, 0.295);
+    flex-wrap: wrap;
+    
 }
 
 .about h2 {
@@ -122,7 +122,7 @@ nav ul li a:hover {
     color: #092c41;
 }
 
-.about p {
+.about h4 {
     font-size: 2rem;
     color: #06333d;
     text-align: justify;
@@ -130,13 +130,22 @@ nav ul li a:hover {
 }
 
 .about-images {
-    display: flex; /* Робить контейнер гнучким */
-    justify-content: center; /* Центрує зображення по горизонталі */
-    gap: 20px; /* Відстань між зображеннями */
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
 }
 
 .about-images img {
-    width: 35%; /* Розмір кожного зображення */
+    width: 35%;
+}
+/* Для планшетів */
+@media (max-width: 1024px) {
+    .block { width: 45%; }
+}
+
+/* Для мобільних телефонів */
+@media (max-width: 768px) {
+    .block { width: 100%; }
 }
 
 
@@ -159,21 +168,21 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    align-items: stretch; /* Всі елементи рівні по висоті */
+    align-items: stretch;
 }
 
 .service-item {
     background-color: rgba(223, 226, 229, 0.433);
-    padding: 50px; /* Менше відступів, щоб текст рівномірно розподілявся */
-    border-radius: 20px; /* Менше округлення */
-    width: 30%; /* Фіксована ширина */
+    padding: 50px;
+    border-radius: 20px; 
+    width: 30%; 
     box-shadow: 0 4px 10px rgba(208, 204, 204, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Рівномірний розподіл тексту */
-    align-items: center; /* Центрування тексту */
+    justify-content: space-between; 
+    align-items: center; 
     text-align: center;
-    min-height: 350px; /* Однакова висота */
+    min-height: 350px; 
 }
 
 .service-item h3 {
@@ -183,7 +192,7 @@ nav ul li a:hover {
 }
 
 .service-item ul {
-    list-style: none; /* Прибрати стандартні маркери */
+    list-style: none; 
     padding: 0;
     text-align: center;
 }
@@ -231,7 +240,7 @@ nav ul li a:hover {
 .team h2 {
         font-size: 2.5rem;
         margin-bottom: 20px;
-        color: #bcc945; /* Замість цього кольору використовуйте бажаний */
+        color: #bcc945;
         font-size: 2.5rem;
         margin-bottom: 20px;
 }
@@ -301,12 +310,6 @@ nav ul li a:hover {
             max-width: 560px;
         }
 }
-
-
-
-
-
-
     
 
 .cta-button {
@@ -325,7 +328,10 @@ nav ul li a:hover {
 
 /* Contact Section */
 .contacts {
-    
+
+    background-image: url(img/pexels-therato-3374204.jpg);
+    background-size: cover;
+    background-position: center;
     background-color: #7fa6c882;
     color: white;
     padding: 60px 0;
@@ -402,25 +408,34 @@ nav ul li a:hover {
 
 map-section 
 .map-section {
-    text-align: center; /* Вирівнює весь текст по центру */
+    background-image: url(img/pexels-lukas-rodriguez-1845331-3618162.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
     padding: 50px 0;
-    background-color: #f4f4f4; /* Колір фону */
+    background-color: #f4f4f4; 
 }
     .map-section h2 {
+        background-image: url(img/pexels-lukas-rodriguez-1845331-3618162.jpg);
+    background-size: cover;
+    background-position: center;
         text-align: center; 
-        color: #3e9bbb92; /* Колір тексту (можна змінити) */
-        font-size: 2.5rem; /* Розмір шрифту */
-        margin-bottom: 20px;
+        color: #eff6f8;
+        font-size: 2.5rem;
+        margin-bottom: 2px;
         font-weight: bold;
     }
 
 
 /* Footer Section */
 footer {
+    background-image: url(img/pexels-lukas-rodriguez-1845331-3618162.jpg);
+    background-size: cover;
+    background-position: center;
     background-color: #499bce9a;
-    color: rgb(96, 52, 87);
+    color: rgb(24, 3, 21);
     text-align: justify;
-    padding: 20px 0;
+    padding: 10px 0;
     .footer-text {
         display: flex; 
         justify-content: space-between; 
